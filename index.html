@@ -1,0 +1,260 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>Andrew Kimani</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.0/TweenMax.min.js"></script>
+    <script src="scrollmagic/minified/ScrollMagic.min.js"></script>
+    <script src="scrollmagic/minified/plugins/animation.gsap.min.js"></script>
+    <script src="scrollmagic/minified/plugins/debug.addIndicators.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+    
+</head>
+<body>
+    <header class="nav-wrapper">
+        <div class="grad-bar"></div>
+        <nav class="navbar">
+        
+          <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+          <ul class="nav no-search">
+            <li class="nav-item"><a href="#" id="nav1">Home</a></li>
+            <li class="nav-item"><a href="#" id="nav2">About</a></li>
+            <li class="nav-item"><a href="#" id="nav3">Work</a></li>
+            <li class="nav-item"><a href="#" id="nav4">Contact</a></li>
+            <i class="fas fa-search" id="search-icon"></i>
+          </ul>
+
+          <div class="switch" id="switch">
+            <img src="images/moon.png" class="image" id="image" alt="toogle-img">
+          </div>
+
+        </nav>
+    </header>
+    
+    <div id="first-div">
+        <div class="background-video" id="background-video">
+            <canvas id="canvas"></canvas>
+        </div>
+        <div id="container1">
+            <div id="container1-text">
+                <h1>Hi, I'm <span class="name">Andrew</span></h1>
+                <p id="go-further">I design and code beautiful and captivating <span id="animated"></span></p>
+                <div class="know-me">Get to know me   <svg style="width: 24px;height:24px;" viewBox="0 0 24 24">
+                    <path fill="var(--secondary-color)" d="M10,4H14V13L17.5,9.5L19.92,11.92L12,19.84L4.08,11.92L6.5,9.5L10,13V4Z"/>
+                </svg>
+             </div>
+            </div>
+        </div>
+
+        
+    </div>
+
+
+    <div id="container2" class="container2">
+        <div class="image-div" id="img-div1"><img src="images/2adacbc4-027e-489b-abc9-0f97bc1017c1.png" class="img" id="img01" alt="profile-picture" /></div>
+        <span class="prof-text" id="prof-text">
+            <div id="container2-text">
+                <h2 class="about-text" id="about-h">About</h2>
+                <p class="about-text" id="about-p">Hi. I am <span class="name">Andrew Kimani</span> and I am a freelance Front-end Developer with a passion for creating excellent websites. I help individuals, small-businesses and corporations turn their ideas into reality.</p>
+                <button type="button" id="get-vpn2" class="about-text">Contact me</button>
+            </div>
+        </span>
+    </div>
+
+    
+
+    <div class="my-skills">
+        <div class="container">
+          <div class="skills">
+            <h2 class="skills-divs">My skills</h2>
+            <p class="skills-divs">I am skilled in HTML/HTML5, CSS/CSS3, Javascript, JQuery, Bootsrap, WordPress, React, Redux, Python, Webpack, Github and Atom.</p>
+            <p class="skills-divs">I am a Digital Craftsman who creates clean, readable and mantainable code as well as beautiful and usable web designs.</p>
+            <button type="button" class="skills-divs" id="my-button" name="button">Contact Me</button>
+          </div>
+          <div class="progress">
+            <div class="skills-containers">
+                <div class="languages" id="html">
+                    <img class="skill-image" src="icons/html-5 (1).png" alt="HTML">
+                    <span class="language-p">HTML</span>
+                </div>
+                <div class="languages" id="css">
+                    <img class="skill-image" src="icons/css-3.png" alt="css">
+                    <span class="language-p">CSS</span>
+                </div>
+                <div class="languages" id="javascript">
+                    <img class="skill-image" class="skill-image" src="icons/js.png" alt="javascript">
+                    <span class="language-p">JAVASCRIPT</span>
+                </div>
+                <div class="languages" id="jquery">
+                    <img class="skill-image" src="icons/jquery.png" alt="JQuery">
+                    <span class="language-p">JQUERY</span>
+                </div>
+            </div>
+            <div class="skills-containers">
+                <div class="languages" id="react">
+                    <img class="skill-image" src="icons/atom.png" alt="react">
+                    <span class="language-p">REACT</span>
+                </div>
+                <div class="languages" id="redux">
+                    <img class="skill-image" src="icons/icons8-redux-96.png" alt="">
+                    <span class="language-p">REDUX</span>
+                </div>
+                <div class="languages" id="vue">
+                    <img class="skill-image" src="icons/icons8-vue-js-96.png" alt="">
+                    <span class="language-p">VUE JS</span>
+                </div>
+                <div class="languages" id="wordpress">
+                    <img class="skill-image" src="icons/wordpress.png" alt="">
+                    <span class="language-p">WORDPRESS</span>
+                </div>
+            </div>
+            <div class="skills-containers">
+                <div class="languages" id="python">
+                    <img class="skill-image" src="icons/python.png" alt="">
+                    <span class="language-p">PYTHON</span>
+                </div>
+                <div class="languages" id="git">
+                    <img class="skill-image" src="icons/icons8-git-96.png" alt="">
+                    <span class="language-p">GIT</span>
+                </div>
+                <div class="languages" id="github">
+                    <img class="skill-image" src="icons/icons8-github-squared-100.svg" alt="">
+                    <span class="language-p">GITHUB</span>
+                </div>
+                <div class="languages" id="webpack">
+                    <img class="skill-image" src="icons/icons8-webpack-96.png" alt="">
+                    <span class="language-p">WEBPACK</span>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    <div class="portfolio"><p id="port-p" class="port-p">Recent Work</p></div>
+
+    <div id="container5">
+        <div id="cont5-cont">
+            <div class="cont5-divs" id="cont5-divs1">
+                <div class="image-divs" id="cont5-img1"><img src="images/Screenshot 2022-10-28 181222.png" alt="Jane's therapy" /></div>
+                <div class="cover-div" id="cover-div1">
+                    <div class="cover-text">
+                        
+                        <p class="cover-p">A councelling and therapy website.</p>
+                        <button type="button" onclick="location.href='http://therapy.great-site.net' " id="port-but1" class="portfolio-button">Visit Website</button>
+                    </div>
+                </div>
+            </div>
+            <div class="cont5-divs" id="cont5-divs2">
+                <div class="image-divs" id="cont5-img2"><img src="images/Screenshot 2022-11-21 133023.png" alt="space-tourism" /></div>
+                <div class="cover-div" id="cover-div2">
+                    <div class="cover-text">
+                        <p class="cover-p">A space tourism website.</p>
+                        
+                    <button type="button" onclick="location.href='http://space-tourism.great-site.net' " id="port-but2" class="portfolio-button">Visit Website</button>
+                    </div>
+                </div>
+            </div>
+            <div class="cont5-divs" id="cont5-divs3">
+                <div class="image-divs" id="cont5-img3"><img src="images/Screenshot 2023-02-07 234651.png" alt="Fooble search" /></div>
+                <div class="cover-div" id="cover-div3">
+                    <div class="cover-text">
+                        
+                        <p class="cover-p">Under development.</p>
+                        <button type="button" onclick="location.href='http://vacation766.epizy.com' " id="port-but3" class="portfolio-button">Visit Website</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cont5-divs" id="cont5-divs4">
+                <div class="image-divs" id="cont5-img4"><img src="images/Screenshot 2022-08-17 000908.png" alt="Jane's therapy" /></div>
+                <div class="cover-div" id="cover-div4">
+                    <div class="cover-text">
+                        
+                        <p class="cover-p">A Gym and Fitness center.</p>
+                        <button type="button" onclick="location.href='http://colosseum-gym.great-site.net/' " id="port-but1" class="portfolio-button">Visit Website</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cont5-divs" id="cont5-divs5" style="background-color: hsl(212, 27%, 19%);">
+                <div class="image-divs" id="cont5-img5"><img src="images/logo-sunnyside.svg" alt="Jane's therapy" style="height: 100%;"/></div>
+                <div class="cover-div" id="cover-div5">
+                    <div class="cover-text">
+                        
+                        <p class="cover-p">A full-service agency specializing in helping brands grow fast.</p>
+                        <button type="button" onclick="location.href='http://sunnyside123.great-site.net' " id="port-but1" class="portfolio-button">Visit Website</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cont5-divs" id="cont5-divs6" style="background-color: hsl(231, 69%, 60%);">
+                <div class="image-divs" id="cont5-img6"><img src="images/logo-bookmark2.svg" alt="Jane's therapy" style="height:100%" /></div>
+                <div class="cover-div" id="cover-div6">
+                    <div class="cover-text">
+                        
+                        <p class="cover-p">A clean and simple interface to organise your favorite websites.</p>
+                        <button type="button" onclick="location.href='http://bookmark-master.great-site.net' " id="port-but1" class="portfolio-button">Visit Website</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <div id="container6">
+        <h6 class="h6">Contact Me</h6>
+        <p class="contact-par">Interested in working together? Feel free to Contact me by submitting the form below and I will get back to you  as soon as possible.</p>
+        <form class="cf" action="mailto:andrewkimani766@gmail.com" method="post" enctype="text/plain">
+        <div class="half left cf">
+            <input type="text" id="input-name" placeholder="Name" class="inputs">
+            <input type="email" id="input-email" placeholder="Email address" class="inputs">
+            <input type="text" id="input-subject" placeholder="Subject" class="inputs">
+        </div>
+        <div class="half right cf">
+            <textarea name="message" type="text" id="input-message" placeholder="Message" class="inputs"></textarea>
+        </div>  
+        <input type="submit" value="Submit" id="input-submit" class="inputs">
+        </form>
+    </div>
+
+    <div class="custom-shape-divider-bottom-1665436664">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+        </svg>
+      </div>
+
+    <footer id="footer">
+        <div class="cont-footer">
+            <div class="logo-div"><img src="images/logo.jpg" alt="logo" class="logo"></div>
+            <div class="quote-div">Feel free to contact me on any of <br> the platforms below:</div>
+            <div class="contact-plats">
+                <a href="mailto:andrewkimani766@gmail.com" id="gmail" class="contac-links"><img src="images/gmail.png" alt="gmail" class="contact-img" id="gmail"></a>
+                <a href="t.me/drew766" class="contac-links"><img src="images/telegram-app.png" alt="telegram" class="contact-img" id="telegram"></a>
+                <a href="https://www.upwork.com/freelancers/~01f1f91349e53f4076" class="contact-links"><img src="images/upwork.jpg" alt="upwork" class="contact-img" id="upwork" ></a>
+                <a href="instagram.com/andrey_kimani" class="contac-links"><img src="images/instagram.png" alt="instagram" class="contact-img" id="instagram" ></a>
+                <a href="https://twitter.com/Lord_andrey766?t=kQwnNm8beZu9ZVhPMT6o2\w&s=09" class="contact-links"><img src="images/twitter--v1.png" alt="twitter" id="twitter" class="contact-img"></a>
+            </div>
+        </div>
+    </footer>
+    <div class="copyright">
+        <div class="copyright-cont">
+            <p>©2022 Andrew Kimani. All rights reserved.</p>
+        </div>
+    </div>
+    <script src="jquery.min.js"></script>
+    <script src="main.js"></script>
+    <script src="canvas/script.js"></script>
+    <script src="typed.min.js"></script>
+</body>
+</html>
